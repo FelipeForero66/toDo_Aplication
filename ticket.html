@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket_ToDO</title>
+    <!--   <link rel="stylesheet" href="style/styles.css" /> -->
+  </head>
+  <body onload="showTickets()", onload="showUserStories()">
+    <div class="container" id="helBoard">
+      <h1>List of Tickets</h1>
+    </div>
+
+    <div class="container">
+      <div class="element">
+        <ol id="tickets"> 
+          <!--<li>Juan Perez</li>-->
+        </ol>
+      </div>
+    </div>
+
+    <div class="contenedor">
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="addTicket()">+</button>
+        </div>
+        <form id='forma'>
+            <input type="text" id='description' placeholder="Description of the ticket"/>
+        </form>
+    </div>
+
+    <div class="container" id="helBoard">
+      <h1>User Stories</h1>
+    </div>
+
+    <div class="container">
+      <div class="element">
+        <ol id="userStories"> 
+          <!--<li>Juan Perez</li>-->
+        </ol>
+      </div>
+    </div>
+
+    <div class="contenedor">
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="addUserStory()">+</button>
+        </div>
+        <form id='forma2'>
+            <input type="text" id='description2' placeholder="Input the user story"/>
+        </form>
+        
+    </div>
+
+
+<!--     <script src="js/Data.js"></script> -->
+    <script src="js/appTicket.js"></script>
+    <script src="js/appUserStory.js"></script>
+
+
+<!--     <script src="js/Ticket.js"></script>
+    <script src="js/UserStory.js"></script> -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+  </body>
+</html>

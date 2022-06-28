@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo_App</title>
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
+  <body>
+    <h1>ToDo_App</h1>
+    <div class="principal_container">
+      <form action="server" method="POST" target="_blank">
+        <fieldset>
+          <legend>SIGN UP</legend>
+          <label for="email">Email: </label>
+          <br />
+          <input
+            type="email"
+            placeholder="Input your email"
+            required="true"
+          /><br />
+          <label for="password">Password</label><br />
+          <input type="password" placeholder="Password" required="true" />
+          <br />
+          <label for="companies">Companies</label><br />
+          <select name="companies" id="companies" placeholder="companies">
+            <option value="Amazon">Amazon</option>
+            <option value="Microsoft">Microsoft</option>
+            <option value="apple">Apple</option>
+          </select>
+          <br />
+          <label for="proyects">proyects</label>
+          <br />
+          <select name="proyects" id="proyects">
+            <option value="microservices">Microservices</option>
+            <option value="machine_learning">Machine learning</option>
+            <option value="web_disign">Web Design</option></select
+          ><br /><br />
+        </fieldset>
+      </form>
+      <br />
+    </div>
+    <button id="register" class="button_register">Register</button>
+    <br /><br />
+    <span class="button_text">Have you count?</span
+    ><a href="login.html"> Login</a>;
+  </body>
+</html>
